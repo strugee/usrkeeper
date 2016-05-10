@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: etckeeper@packages.debian.org\n"
+"Report-Msgid-Bugs-To: usrkeeper@packages.debian.org\n"
 "POT-Creation-Date: 2009-05-06 14:41-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -39,7 +39,7 @@ msgstr ""
 #. Type: boolean
 #. Description
 #: ../templates:3001
-msgid "Remove etckeeper ${VCS} repository and associated files?"
+msgid "Remove usrkeeper ${VCS} repository and associated files?"
 msgstr ""
 
 #. Type: boolean
@@ -48,5 +48,5 @@ msgstr ""
 msgid ""
 "Etckeeper is being purged from the system, and was used to store /etc in a "
 "${VCS} repository. If you choose to remove the repository, this will DESTROY "
-"all history etckeeper has recorded for /etc."
+"all history usrkeeper has recorded for /etc."
 msgstr ""

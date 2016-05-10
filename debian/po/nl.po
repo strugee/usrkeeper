@@ -1,13 +1,13 @@
-# Dutch translation of etckeeper debconf templates.
+# Dutch translation of usrkeeper debconf templates.
 # Copyright (C) 2008-2012 THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the etckeeper package.
+# This file is distributed under the same license as the usrkeeper package.
 # Bart Cornelis <cobaco@skolelinux.no>, 2008.
 # Jeroen Schot <schot@a-eskwadraat.nl>, 2012.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: etckeeper 0.59\n"
-"Report-Msgid-Bugs-To: etckeeper@packages.debian.org\n"
+"Project-Id-Version: usrkeeper 0.59\n"
+"Report-Msgid-Bugs-To: usrkeeper@packages.debian.org\n"
 "POT-Creation-Date: 2009-05-06 14:41-0400\n"
 "PO-Revision-Date: 2012-01-02 15:54+0100\n"
 "Last-Translator: Jeroen Schot <schot@a-eskwadraat.nl>\n"
@@ -43,9 +43,9 @@ msgstr ""
 #. Type: boolean
 #. Description
 #: ../templates:3001
-msgid "Remove etckeeper ${VCS} repository and associated files?"
+msgid "Remove usrkeeper ${VCS} repository and associated files?"
 msgstr ""
-"De ${VCS}-opslagruimte van etckeeper en gerelateerde bestanden verwijderen?"
+"De ${VCS}-opslagruimte van usrkeeper en gerelateerde bestanden verwijderen?"
 
 #. Type: boolean
 #. Description
@@ -53,9 +53,9 @@ msgstr ""
 msgid ""
 "Etckeeper is being purged from the system, and was used to store /etc in a "
 "${VCS} repository. If you choose to remove the repository, this will DESTROY "
-"all history etckeeper has recorded for /etc."
+"all history usrkeeper has recorded for /etc."
 msgstr ""
 "Etckeeper wordt gewist van het systeem (purge), en werd gebruikt om /etc in "
 "een ${VCS}-opslagruimte te bewaren. Als u ervoor kiest om de opslagruimte te "
-"verwijderen zal alle geschiedenis van /etc die etckeeper heeft bijgehouden "
+"verwijderen zal alle geschiedenis van /etc die usrkeeper heeft bijgehouden "
 "worden VERNIETIGD."

@@ -1,11 +1,11 @@
 .\" -*- nroff -*-
 .TH ETCKEEPER 8 "" "" ""
 .SH NAME
-etckeeper \- store /etc in git, mercurial, bazaar, or darcs
+usrkeeper \- store /etc in git, mercurial, bazaar, or darcs
 .SH SYNOPSIS
-.B etckeeper command [-d directory]
+.B usrkeeper command [-d directory]
 .SH DESCRIPTION
-etckeeper manages /etc be stored in a git, mercurial, bazaar, or darcs
+usrkeeper manages /etc be stored in a git, mercurial, bazaar, or darcs
 repository. By default each of the commands operates on /etc, but a
 different directory can be specified to operate on a clone of the /etc
 repository located elsewhere.
@@ -14,14 +14,14 @@ repository located elsewhere.
 .B init
 This initialises and sets up a git, mercurial, bazaar, or darcs
 repository (depending on the VCS setting in
-/etc/etckeeper/etckeeper.conf). Typically this is run in /etc once
-when starting to use etckeeper on a machine. It can also be used to
+/etc/usrkeeper/usrkeeper.conf). Typically this is run in /etc once
+when starting to use usrkeeper on a machine. It can also be used to
 initialise a clone of the /etc repository located elsewhere.
 .TP
 .B commit [message]
 Commits all changes in /etc to the repository. A commit message can be
 specified. You may also use the underlying VCS to commit manually.
-(Note that etckeeper commit will notice if a user has used sudo or su to
+(Note that usrkeeper commit will notice if a user has used sudo or su to
 become root, and record the original username in the commit.)
 .TP
 .B pre-commit
@@ -42,31 +42,31 @@ repository. (You can also call this by hand after running dpkg by hand.)
 This returns true if the directory contains uncommitted changes.
 .TP
 .B update-ignore [-a]
-This updates the VCS ignore file. Content outside a "managed by etckeeper"
+This updates the VCS ignore file. Content outside a "managed by usrkeeper"
 block is not touched. This is generally run when upgrading to a new version
-of etckeeper. (The -a switch will add a "managed by etckeeper" block if
+of usrkeeper. (The -a switch will add a "managed by usrkeeper" block if
 one is not present.)
 .TP
 .B vcs subcommand [options ...]
-You can use this to run any subcommand of the VCS that etckeeper is
-configured to run. It will be run in /etc. For example, "etckeeper vcs
+You can use this to run any subcommand of the VCS that usrkeeper is
+configured to run. It will be run in /etc. For example, "usrkeeper vcs
 diff" will run "git diff", etc.
 .TP
 .B uninit [-f]
 This command DESTROYS DATA! It is the inverse of the init command, removing
-VCS information and etckeeper's own bookkeeping information from the
-directory. Use with caution. A typical use case would be to run etckeeper
-uninit, then modify etckeeper.conf to use a different VCS, and then run
-etckeeper init. (The -f switch can be used to force uninit without
+VCS information and usrkeeper's own bookkeeping information from the
+directory. Use with caution. A typical use case would be to run usrkeeper
+uninit, then modify usrkeeper.conf to use a different VCS, and then run
+usrkeeper init. (The -f switch can be used to force uninit without
 prompting.)
 .SH FILES
-/etc/etckeeper/etckeeper.conf is the configuration file.
+/etc/usrkeeper/usrkeeper.conf is the configuration file.
 
-/etc/etckeeper also contains directories containing the programs that are
+/etc/usrkeeper also contains directories containing the programs that are
 run for each of the above commands.
 .SH ENVIRONMENT VARIABLES
-ETCKEEPER_CONF_DIR path to configuration directory instead of default /etc/etckeeper.
+ETCKEEPER_CONF_DIR path to configuration directory instead of default /etc/usrkeeper.
 .SH SEE ALSO
-/usr/share/doc/etckeeper/README.md.gz
+/usr/share/doc/usrkeeper/README.md.gz
 .SH AUTHOR 
 Joey Hess <id@joeyh.name>

@@ -1,8 +1,8 @@
-_etckeeper() { 
+_usrkeeper() { 
 	local cur;
 	COMPREPLY=();
 	cur=${COMP_WORDS[COMP_CWORD]};
-	COMPREPLY=( $( compgen -W '$(cd /etc/etckeeper/; for i in *.d/; do echo ${i%.d/}; done)' -- $cur ) );
+	COMPREPLY=( $( compgen -W '$(cd /etc/usrkeeper/; for i in *.d/; do echo ${i%.d/}; done)' -- $cur ) );
 }
 
-complete -F _etckeeper etckeeper
+complete -F _usrkeeper usrkeeper

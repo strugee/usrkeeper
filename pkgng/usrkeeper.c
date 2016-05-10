@@ -34,9 +34,9 @@
 #include <spawn.h>
 
 #include <pkg.h>
-#define PLUGIN_NAME "etckeeper"
+#define PLUGIN_NAME "usrkeeper"
 /* TODO: make configuration param? */
-#define ETCKEEPER_PATH "/usr/local/bin/etckeeper"
+#define ETCKEEPER_PATH "/usr/local/bin/usrkeeper"
 
 extern char **environ;
 
@@ -51,7 +51,7 @@ pkg_plugin_init(struct pkg_plugin *p)
 	self = p;
 
 	pkg_plugin_set(p, PKG_PLUGIN_NAME, PLUGIN_NAME);
-	pkg_plugin_set(p, PKG_PLUGIN_DESC, "etckeeper plugin");
+	pkg_plugin_set(p, PKG_PLUGIN_DESC, "usrkeeper plugin");
 	pkg_plugin_set(p, PKG_PLUGIN_VERSION, "1.0.0");
 
 	/* NOTE: upgrade/deinstall is regarded as install */
@@ -90,12 +90,12 @@ pkg_plugin_init(struct pkg_plugin *p)
 }
 
 static int
-call_etckeeper(char *arg)
+call_usrkeeper(char *arg)
 {
 	int error, pstat;
 	pid_t pid;
 	char *argv[] = {
-		"etckeeper",
+		"usrkeeper",
 		arg,
 		NULL,
 	};
@@ -112,7 +112,7 @@ call_etckeeper(char *arg)
 	}
 
 	if ((error = WEXITSTATUS(pstat)) != 0) {
-		pkg_plugin_error(self, "etckeeper failed with exit code %d", error);
+		pkg_plugin_error(self, "usrkeeper failed with exit code %d", error);
 		return (EPKG_FATAL);
 	}
 
@@ -122,11 +122,11 @@ call_etckeeper(char *arg)
 static int
 pre_install_hook(void *data, struct pkgdb *db)
 {
-	return call_etckeeper("pre-install");
+	return call_usrkeeper("pre-install");
 }
 
 static int
 post_install_hook(void *data, struct pkgdb *db)
 {
-	return call_etckeeper("post-install");
+	return call_usrkeeper("post-install");
 }

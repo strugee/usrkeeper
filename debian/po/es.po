@@ -1,6 +1,6 @@
-# etckeeper po-debconf translation to Spanish.
+# usrkeeper po-debconf translation to Spanish.
 # Copyright (C) 2009 Software in the Public Interest.
-# This file is distributed under the same license as the etckeeper package.
+# This file is distributed under the same license as the usrkeeper package.
 #
 #  Changes:
 # - Initial translation
@@ -31,8 +31,8 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: etckeeper 0.38\n"
-"Report-Msgid-Bugs-To: etckeeper@packages.debian.org\n"
+"Project-Id-Version: usrkeeper 0.38\n"
+"Report-Msgid-Bugs-To: usrkeeper@packages.debian.org\n"
 "POT-Creation-Date: 2009-05-06 14:41-0400\n"
 "PO-Revision-Date: 2009-07-11 16:07+0200\n"
 "Last-Translator: Fernando González de Requena <fgrequena@gmail.com>\n"
@@ -67,8 +67,8 @@ msgstr ""
 #. Type: boolean
 #. Description
 #: ../templates:3001
-msgid "Remove etckeeper ${VCS} repository and associated files?"
-msgstr "¿Desea eliminar el repositorio ${VCS} de etckeeper y los ficheros asociados?"
+msgid "Remove usrkeeper ${VCS} repository and associated files?"
+msgstr "¿Desea eliminar el repositorio ${VCS} de usrkeeper y los ficheros asociados?"
 
 #. Type: boolean
 #. Description
@@ -76,10 +76,10 @@ msgstr "¿Desea eliminar el repositorio ${VCS} de etckeeper y los ficheros asoci
 msgid ""
 "Etckeeper is being purged from the system, and was used to store /etc in a "
 "${VCS} repository. If you choose to remove the repository, this will DESTROY "
-"all history etckeeper has recorded for /etc."
+"all history usrkeeper has recorded for /etc."
 msgstr ""
-"Se está eliminando completamente etckeeper de su sistema. Etckeeper se ha "
+"Se está eliminando completamente usrkeeper de su sistema. Etckeeper se ha "
 "utilizado para almacenar el directorio «/etc» en un repositorio ${VCS}. Si elige "
-"eliminar el repositorio, se DESTRUIRÁ todo el historial que etckeeper ha "
+"eliminar el repositorio, se DESTRUIRÁ todo el historial que usrkeeper ha "
 "guardado para «/etc»."
 

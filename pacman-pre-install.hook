@@ -1,4 +1,4 @@
-# etckeeper pre-install hook for Pacman 5 and newer
+# usrkeeper pre-install hook for Pacman 5 and newer
 
 [Trigger]
 Operation = Install
@@ -8,8 +8,8 @@ Type = Package
 Target = *
 
 [Action]
-Description = etckeeper: pre-transaction commit
+Description = usrkeeper: pre-transaction commit
 When = PreTransaction
-Exec = /usr/bin/etckeeper pre-install
-Depends = etckeeper
+Exec = /usr/bin/usrkeeper pre-install
+Depends = usrkeeper
 AbortOnFail

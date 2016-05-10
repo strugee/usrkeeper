@@ -2,13 +2,13 @@
 set -e
 
 if [ -z "$ETCKEEPER_CONF_DIR" ]; then
-	ETCKEEPER_CONF_DIR=/etc/etckeeper
+	ETCKEEPER_CONF_DIR=/etc/usrkeeper
 fi
 
-conf="$ETCKEEPER_CONF_DIR/etckeeper.conf"
+conf="$ETCKEEPER_CONF_DIR/usrkeeper.conf"
 
 usage() {
-	echo "usage: etckeeper command [-d directory]" >&2
+	echo "usage: usrkeeper command [-d directory]" >&2
 	exit 1
 }
 
@@ -67,7 +67,7 @@ fi
 if [ -z "$1" ]; then
 	usage
 elif [ "x$1" = "x-h" ] || [ "x$1" = "x--help" ]; then
-	man etckeeper || echo "Usage: etckeeper command [-d directory]" >&2
+	man usrkeeper || echo "Usage: usrkeeper command [-d directory]" >&2
 	exit 0
 elif [ "x$1" = "x-v" ] || [ "x$1" = "x--version" ]; then
 	# This is automatically updated by the Makefile.
@@ -85,12 +85,12 @@ elif [ "$command" = "pre-apt" ]; then
 fi
 
 if echo "$command" | LANG=C egrep -q '[^-a-z_]'; then
-	echo "etckeeper: invalid command $command" >&2
+	echo "usrkeeper: invalid command $command" >&2
 	exit 1
 fi
 
 if [ ! -d "$ETCKEEPER_CONF_DIR/$command.d" ]; then
-	echo "etckeeper: $ETCKEEPER_CONF_DIR/$command.d does not exist" >&2
+	echo "usrkeeper: $ETCKEEPER_CONF_DIR/$command.d does not exist" >&2
 	exit 1
 fi
 

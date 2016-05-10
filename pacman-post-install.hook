@@ -1,4 +1,4 @@
-# etckeeper post-install hook for Pacman 5 and newer
+# usrkeeper post-install hook for Pacman 5 and newer
 
 [Trigger]
 Operation = Install
@@ -8,7 +8,7 @@ Type = Package
 Target = *
 
 [Action]
-Description = etckeeper: post-transaction commit
+Description = usrkeeper: post-transaction commit
 When = PostTransaction
-Exec = /usr/bin/etckeeper post-install
-Depends = etckeeper
+Exec = /usr/bin/usrkeeper post-install
+Depends = usrkeeper

@@ -3,6 +3,6 @@ set -e
 
 if [ "$VCS" = hg ] && [ -d .hg ]; then
 	if ! hg addremove .; then
-		echo "etckeeper warning: hg addremove failed" >&2
+		echo "usrkeeper warning: hg addremove failed" >&2
 	fi
 fi

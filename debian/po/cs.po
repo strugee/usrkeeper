@@ -1,12 +1,12 @@
-# Czech translation of etckeeper debconf messages.
+# Czech translation of usrkeeper debconf messages.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the etckeeper package.
+# This file is distributed under the same license as the usrkeeper package.
 # Miroslav Kure <kurem@debian.cz>, 2007,2009
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: etckeeper\n"
-"Report-Msgid-Bugs-To: etckeeper@packages.debian.org\n"
+"Project-Id-Version: usrkeeper\n"
+"Report-Msgid-Bugs-To: usrkeeper@packages.debian.org\n"
 "POT-Creation-Date: 2009-05-06 14:41-0400\n"
 "PO-Revision-Date: 2009-09-13 09:09+0200\n"
 "Last-Translator: Miroslav Kure <kurem@debian.cz>\n"
@@ -39,8 +39,8 @@ msgstr ""
 #. Type: boolean
 #. Description
 #: ../templates:3001
-msgid "Remove etckeeper ${VCS} repository and associated files?"
-msgstr "Odstranit ${VCS} repositář etckeeperu a přidružené soubory?"
+msgid "Remove usrkeeper ${VCS} repository and associated files?"
+msgstr "Odstranit ${VCS} repositář usrkeeperu a přidružené soubory?"
 
 #. Type: boolean
 #. Description
@@ -48,11 +48,11 @@ msgstr "Odstranit ${VCS} repositář etckeeperu a přidružené soubory?"
 msgid ""
 "Etckeeper is being purged from the system, and was used to store /etc in a "
 "${VCS} repository. If you choose to remove the repository, this will DESTROY "
-"all history etckeeper has recorded for /etc."
+"all history usrkeeper has recorded for /etc."
 msgstr ""
 "Etckeeper se na tomto systému používal pro uchování /etc v ${VCS} "
 "repositáři, avšak nyní je ze systému odstraňován. Pokud povolíte odstranění "
-"repositáře, ZNIČÍTE tím veškerou historii, kterou etckeeper uchovával."
+"repositáře, ZNIČÍTE tím veškerou historii, kterou usrkeeper uchovával."
 
 #~ msgid "Commit changed files in /etc to ${VCS}?"
 #~ msgstr "Zapsat změněné soubory v /etc do ${VCS}?"

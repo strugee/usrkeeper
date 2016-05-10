@@ -1,6 +1,6 @@
 Please add support pacmatic http://kmkeen.com/pacmatic/
 
-https://github.com/nicolaichuk/etckeeper/commit/52846aebb91770e3bbc466881998714c88cbcaa6
+https://github.com/nicolaichuk/usrkeeper/commit/52846aebb91770e3bbc466881998714c88cbcaa6
 
 Patch attached: 'add_support_pacmatic.patch'
 

@@ -1,4 +1,4 @@
-etckeeper 1.18.3 released with [[!toggle text="these changes"]]
+usrkeeper 1.18.3 released with [[!toggle text="these changes"]]
 [[!toggleable text="""
    * Added support for pacmatic, contributed by nicolaichuk.
    * bzr: make sure EMAIL is defined

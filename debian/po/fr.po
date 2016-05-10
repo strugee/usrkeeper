@@ -1,14 +1,14 @@
-# Translation of etckeeper debconf template to French
+# Translation of usrkeeper debconf template to French
 # Copyright (C) 2009 Debian French l10n team <debian-l10n-french@lists.debian.org>
-# This file is distributed under the same license as the etckeeper package.
+# This file is distributed under the same license as the usrkeeper package.
 #
 # Translators:
 # Jean-Baka Domelevo Entfellner <domelevo@gmail.com>, 2007.
 # Bruno Travouillon <debian@travouillon.fr>, 2009.
 msgid ""
 msgstr ""
-"Project-Id-Version: etckeeper\n"
-"Report-Msgid-Bugs-To: etckeeper@packages.debian.org\n"
+"Project-Id-Version: usrkeeper\n"
+"Report-Msgid-Bugs-To: usrkeeper@packages.debian.org\n"
 "POT-Creation-Date: 2009-05-06 14:41-0400\n"
 "PO-Revision-Date: 2009-05-17 11:42+0200\n"
 "Last-Translator: Bruno Travouillon <debian@travouillon.fr>\n"
@@ -47,9 +47,9 @@ msgstr ""
 #. Type: boolean
 #. Description
 #: ../templates:3001
-msgid "Remove etckeeper ${VCS} repository and associated files?"
+msgid "Remove usrkeeper ${VCS} repository and associated files?"
 msgstr ""
-"Faut-il supprimer le référentiel ${VCS} d'etckeeper et les fichiers "
+"Faut-il supprimer le référentiel ${VCS} d'usrkeeper et les fichiers "
 "associés ?"
 
 #. Type: boolean
@@ -58,8 +58,8 @@ msgstr ""
 msgid ""
 "Etckeeper is being purged from the system, and was used to store /etc in a "
 "${VCS} repository. If you choose to remove the repository, this will DESTROY "
-"all history etckeeper has recorded for /etc."
+"all history usrkeeper has recorded for /etc."
 msgstr ""
 "Etckeeper est purgé du système, et était utilisé pour stocker /etc dans un "
 "référentiel ${VCS}. Si vous choisissez de supprimer ce référentiel, cela va "
-"DÉTRUIRE tout l'historique qu'etckeeper a enregistré pour /etc."
+"DÉTRUIRE tout l'historique qu'usrkeeper a enregistré pour /etc."

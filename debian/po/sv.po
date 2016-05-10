@@ -1,13 +1,13 @@
-# translation of etckeeper_0.20_sv.po to Swedish
-# etckeeper.
+# translation of usrkeeper_0.20_sv.po to Swedish
+# usrkeeper.
 # Copyright (C) 2008
-# This file is distributed under the same license as the etckeeper package.
+# This file is distributed under the same license as the usrkeeper package.
 #
 # Martin Ågren <martin.agren@gmail.com>, 2008.
 msgid ""
 msgstr ""
-"Project-Id-Version: etckeeper_0.20_sv\n"
-"Report-Msgid-Bugs-To: etckeeper@packages.debian.org\n"
+"Project-Id-Version: usrkeeper_0.20_sv\n"
+"Report-Msgid-Bugs-To: usrkeeper@packages.debian.org\n"
 "POT-Creation-Date: 2009-05-06 14:41-0400\n"
 "PO-Revision-Date: 2009-05-12 20:08+0100\n"
 "Last-Translator: Martin Bagge <brother@bsnet.se>\n"
@@ -43,8 +43,8 @@ msgstr ""
 #. Type: boolean
 #. Description
 #: ../templates:3001
-msgid "Remove etckeeper ${VCS} repository and associated files?"
-msgstr "Ska ${VCS}-förrådet för etckeeper och alla tillhörande filer tas bort?"
+msgid "Remove usrkeeper ${VCS} repository and associated files?"
+msgstr "Ska ${VCS}-förrådet för usrkeeper och alla tillhörande filer tas bort?"
 
 #. Type: boolean
 #. Description
@@ -52,8 +52,8 @@ msgstr "Ska ${VCS}-förrådet för etckeeper och alla tillhörande filer tas bor
 msgid ""
 "Etckeeper is being purged from the system, and was used to store /etc in a "
 "${VCS} repository. If you choose to remove the repository, this will DESTROY "
-"all history etckeeper has recorded for /etc."
+"all history usrkeeper has recorded for /etc."
 msgstr ""
 "Etckeeper håller på att tas bort från systemet, användningsområdet för "
-"etckeeper är att spara /etc i ett ${VCS}-förråd. Om du väljer att ta bort "
+"usrkeeper är att spara /etc i ett ${VCS}-förråd. Om du väljer att ta bort "
 "förrådet kommer all historik för /etc att raderas."

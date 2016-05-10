@@ -1,12 +1,12 @@
-# Danish translation etckeeper.
-# Copyright (C) 2010 etckeeper & nedenst??ende overs??ttere.
-# This file is distributed under the same license as the etckeeper package.
+# Danish translation usrkeeper.
+# Copyright (C) 2010 usrkeeper & nedenst??ende overs??ttere.
+# This file is distributed under the same license as the usrkeeper package.
 # Joe Hansen <joedalton2@yahoo.dk>, 2010.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: etckeeper\n"
-"Report-Msgid-Bugs-To: etckeeper@packages.debian.org\n"
+"Project-Id-Version: usrkeeper\n"
+"Report-Msgid-Bugs-To: usrkeeper@packages.debian.org\n"
 "POT-Creation-Date: 2009-05-06 14:41-0400\n"
 "PO-Revision-Date: 2010-09-22 17:30+01:00\n"
 "Last-Translator: Joe Hansen <joedalton2@yahoo.dk>\n"
@@ -40,8 +40,8 @@ msgstr ""
 #. Type: boolean
 #. Description
 #: ../templates:3001
-msgid "Remove etckeeper ${VCS} repository and associated files?"
-msgstr "Fjern etckeeper ${VCS}-arkiv og associerede filer?"
+msgid "Remove usrkeeper ${VCS} repository and associated files?"
+msgstr "Fjern usrkeeper ${VCS}-arkiv og associerede filer?"
 
 #. Type: boolean
 #. Description
@@ -49,9 +49,9 @@ msgstr "Fjern etckeeper ${VCS}-arkiv og associerede filer?"
 msgid ""
 "Etckeeper is being purged from the system, and was used to store /etc in a "
 "${VCS} repository. If you choose to remove the repository, this will DESTROY "
-"all history etckeeper has recorded for /etc."
+"all history usrkeeper has recorded for /etc."
 msgstr ""
 "Etckeeper afinstalleres fra systemet, og blev brugt til at gemme /etc i et "
 "${VCS}-arkiv. Hvis du v??lger at fjerne arkivet, vil dette ??DEL??GGE al historik "
-"som etckeeper har optaget for /etc."
+"som usrkeeper har optaget for /etc."
 

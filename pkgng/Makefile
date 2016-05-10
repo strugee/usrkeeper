@@ -5,8 +5,8 @@ LIBDIR=		${PREFIX}/lib/pkg/
 SHLIB_DIR?=	${LIBDIR}/
 SHLIB_NAME?=	${PLUGIN_NAME}.so
 
-PLUGIN_NAME=	etckeeper
-SRCS=		etckeeper.c
+PLUGIN_NAME=	usrkeeper
+SRCS=		usrkeeper.c
 
 PKGFLAGS!=	pkgconf --cflags pkg
 CFLAGS+=	${PKGFLAGS}

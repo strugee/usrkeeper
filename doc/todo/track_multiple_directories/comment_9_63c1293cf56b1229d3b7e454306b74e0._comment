@@ -6,7 +6,7 @@
  content="""
 Hello. 
 Please take a look:
-https://github.com/joeyh/etckeeper/pull/30
+https://github.com/joeyh/usrkeeper/pull/30
 
 I tried to add support for multiple dirs for all commands, and leave it compatible with default old config and cli.
 

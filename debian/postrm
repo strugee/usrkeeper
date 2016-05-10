@@ -2,30 +2,30 @@
 set -e
 
 if [ "$1" = purge ]; then
-	if [ -e /etc/.etckeeper ]; then
+	if [ -e /etc/.usrkeeper ]; then
 		. /usr/share/debconf/confmodule
 	
-		# uninit on purge is tricky because etckeeper's configuration
+		# uninit on purge is tricky because usrkeeper's configuration
 		# and code has been removed at this point. This relies on a
 		# stashed away copy.
-		if [ -e /var/cache/etckeeper/stash/etckeeper.conf ] &&
-		   [ -d /var/cache/etckeeper/stash/uninit.d ] &&
-		   [ -x /var/cache/etckeeper/stash/etckeeper ]; then
-			. /var/cache/etckeeper/stash/etckeeper.conf
+		if [ -e /var/cache/usrkeeper/stash/usrkeeper.conf ] &&
+		   [ -d /var/cache/usrkeeper/stash/uninit.d ] &&
+		   [ -x /var/cache/usrkeeper/stash/usrkeeper ]; then
+			. /var/cache/usrkeeper/stash/usrkeeper.conf
 			if [ -n "$VCS" ]; then
-				db_subst etckeeper/purge VCS "$VCS"
-				db_input critical etckeeper/purge || true
+				db_subst usrkeeper/purge VCS "$VCS"
+				db_input critical usrkeeper/purge || true
 				db_go || true
-				db_get etckeeper/purge
+				db_get usrkeeper/purge
 				if [ "$RET" = true ]; then
-					ETCKEEPER_CONF_DIR=/var/cache/etckeeper/stash
+					ETCKEEPER_CONF_DIR=/var/cache/usrkeeper/stash
 					export ETCKEEPER_CONF_DIR
-					/var/cache/etckeeper/stash/etckeeper uninit -f || true
+					/var/cache/usrkeeper/stash/usrkeeper uninit -f || true
 				fi
 			fi
 		fi
 	fi
-	rm -rf /var/cache/etckeeper
+	rm -rf /var/cache/usrkeeper
 fi
 
 #DEBHELPER#

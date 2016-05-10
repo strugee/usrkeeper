@@ -7,7 +7,7 @@ if [ "$VCS" = darcs ] && [ -d _darcs ]; then
 	if test $rc -ne 0; then
 		if ! test $rc -eq 2 -a "${res%No files were added}" != "$res"; then
 			printf "%s" "$res"
-			echo "etckeeper warning: darcs add failed" >&2
+			echo "usrkeeper warning: darcs add failed" >&2
 		fi
 	fi
 	unset rc res

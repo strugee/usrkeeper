@@ -8,7 +8,7 @@ cleanup () {
 }
 if [ -n "$1" ]; then
 	trap cleanup EXIT
-	logfile="$(mktemp -t etckeeper-$VCS.XXXXXXXXXX)"
+	logfile="$(mktemp -t usrkeeper-$VCS.XXXXXXXXXX)"
 	if [ "x$1" = "x--stdin" ]; then
 		cat > "$logfile"
 	else

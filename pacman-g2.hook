@@ -1,14 +1,14 @@
 #!/bin/sh
 
 pre_sysupgrade() {
-	if [ -x /usr/bin/etckeeper ]; then
-		etckeeper pre-install
+	if [ -x /usr/bin/usrkeeper ]; then
+		usrkeeper pre-install
 	fi
 }
 
 post_sysupgrade() {
-	if [ -x /usr/bin/etckeeper ]; then
-		etckeeper post-install
+	if [ -x /usr/bin/usrkeeper ]; then
+		usrkeeper post-install
 	fi
 }
 

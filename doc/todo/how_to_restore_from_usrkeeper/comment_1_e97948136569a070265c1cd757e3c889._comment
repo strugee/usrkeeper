@@ -7,6 +7,6 @@ I would definitely go with #3. Unless I knew that the new system was
 identical to the old before any customizations to /etc -- in that case,
 cloning to /etc would work.
 
-Note that `etckeeper init` will fix up the file permissions of a clone of
-the repo, since etckeeper stores them.
+Note that `usrkeeper init` will fix up the file permissions of a clone of
+the repo, since usrkeeper stores them.
 """]]

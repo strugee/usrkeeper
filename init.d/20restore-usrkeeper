@@ -1,0 +1,22 @@
+#!/bin/sh
+set -e
+
+# Used by .usrkeeper to run a command if the file it acts on
+# (the last parameter) exists.
+maybe () {
+	command="$1"
+	shift 1
+
+	if eval [ -e "\"\$$#\"" ]; then
+		"$command" "$@"
+	fi
+}
+
+# Yes, this runs code from the repository. As documented, usrkeeper-init
+# should only be run on repositories you trust.
+if [ -e .usrkeeper ]; then
+	. ./.usrkeeper
+else
+	touch .usrkeeper
+	chmod 600 .usrkeeper
+fi

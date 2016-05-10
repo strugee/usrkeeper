@@ -1,12 +1,12 @@
 # Polish translation
 # Copyright (C) 2010
-# This file is distributed under the same license as the etckeeper package.
+# This file is distributed under the same license as the usrkeeper package.
 # Artur R. Czechowski <arturcz@hell.pl>, 2010
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: etckeeper 0.50\n"
-"Report-Msgid-Bugs-To: etckeeper@packages.debian.org\n"
+"Project-Id-Version: usrkeeper 0.50\n"
+"Report-Msgid-Bugs-To: usrkeeper@packages.debian.org\n"
 "POT-Creation-Date: 2009-05-06 14:41-0400\n"
 "PO-Revision-Date: 2010-12-19 20:07+0100\n"
 "Last-Translator: Artur R. Czechowski <arturcz@hell.pl>\n"
@@ -36,12 +36,12 @@ msgstr "Przed kontynuacją możesz ręcznie rozwiązać problemy z niezapisanymi
 #. Type: boolean
 #. Description
 #: ../templates:3001
-msgid "Remove etckeeper ${VCS} repository and associated files?"
-msgstr "Usunąć repozytorium etckeeper ${VCS} i powiązane pliki?"
+msgid "Remove usrkeeper ${VCS} repository and associated files?"
+msgstr "Usunąć repozytorium usrkeeper ${VCS} i powiązane pliki?"
 
 #. Type: boolean
 #. Description
 #: ../templates:3001
-msgid "Etckeeper is being purged from the system, and was used to store /etc in a ${VCS} repository. If you choose to remove the repository, this will DESTROY all history etckeeper has recorded for /etc."
+msgid "Etckeeper is being purged from the system, and was used to store /etc in a ${VCS} repository. If you choose to remove the repository, this will DESTROY all history usrkeeper has recorded for /etc."
 msgstr "Etckeeper jest usuwany z systemu, ale był używany do przechowywania zawartości katalogu /etc w repozytorium ${VCS}. Jeśli wybierzesz usunięcie repozytorium, historia zmian zapisana dla katalogu /etc zostanie BEZPOWROTNIE USUNIĘTA."
 
