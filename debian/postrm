@@ -18,8 +18,8 @@ if [ "$1" = purge ]; then
 				db_go || true
 				db_get usrkeeper/purge
 				if [ "$RET" = true ]; then
-					ETCKEEPER_CONF_DIR=/var/cache/usrkeeper/stash
-					export ETCKEEPER_CONF_DIR
+					USRKEEPER_CONF_DIR=/var/cache/usrkeeper/stash
+					export USRKEEPER_CONF_DIR
 					/var/cache/usrkeeper/stash/usrkeeper uninit -f || true
 				fi
 			fi

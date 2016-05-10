@@ -48,7 +48,7 @@ msgstr "Remover o repositório ${VCS} do usrkeeper e os ficheiros associados?"
 #. Description
 #: ../templates:3001
 msgid ""
-"Etckeeper is being purged from the system, and was used to store /etc in a "
+"Usrkeeper is being purged from the system, and was used to store /etc in a "
 "${VCS} repository. If you choose to remove the repository, this will DESTROY "
 "all history usrkeeper has recorded for /etc."
 msgstr ""

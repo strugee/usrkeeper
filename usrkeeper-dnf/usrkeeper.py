@@ -13,12 +13,12 @@ import os
 import dnf
 
 
-class Etckeeper(dnf.Plugin):
+class Usrkeeper(dnf.Plugin):
 
     name = 'usrkeeper'
 
     def _out(self, msg):
-        logger.debug('Etckeeper plugin: %s', msg)
+        logger.debug('Usrkeeper plugin: %s', msg)
 
     def resolved(self):
         self._out('pre transaction commit')

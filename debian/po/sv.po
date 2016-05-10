@@ -50,10 +50,10 @@ msgstr "Ska ${VCS}-förrådet för usrkeeper och alla tillhörande filer tas bor
 #. Description
 #: ../templates:3001
 msgid ""
-"Etckeeper is being purged from the system, and was used to store /etc in a "
+"Usrkeeper is being purged from the system, and was used to store /etc in a "
 "${VCS} repository. If you choose to remove the repository, this will DESTROY "
 "all history usrkeeper has recorded for /etc."
 msgstr ""
-"Etckeeper håller på att tas bort från systemet, användningsområdet för "
+"Usrkeeper håller på att tas bort från systemet, användningsområdet för "
 "usrkeeper är att spara /etc i ett ${VCS}-förråd. Om du väljer att ta bort "
 "förrådet kommer all historik för /etc att raderas."

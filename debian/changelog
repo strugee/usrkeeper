@@ -488,7 +488,7 @@ usrkeeper (0.40) unstable; urgency=low
 
 usrkeeper (0.39) unstable; urgency=low
 
-  * Document ETCKEEPER_CONF_DIR in man page.
+  * Document USRKEEPER_CONF_DIR in man page.
   * Typo. Closes: #536799
   * bzr: Set author to root when committing via sudo. Committer
     will be the sudo user, as it is in git.

@@ -36,7 +36,7 @@
 #include <pkg.h>
 #define PLUGIN_NAME "usrkeeper"
 /* TODO: make configuration param? */
-#define ETCKEEPER_PATH "/usr/local/bin/usrkeeper"
+#define USRKEEPER_PATH "/usr/local/bin/usrkeeper"
 
 extern char **environ;
 
@@ -100,7 +100,7 @@ call_usrkeeper(char *arg)
 		NULL,
 	};
 
-	if ((error = posix_spawn(&pid, ETCKEEPER_PATH, NULL, NULL,
+	if ((error = posix_spawn(&pid, USRKEEPER_PATH, NULL, NULL,
 		__DECONST(char **, argv), environ)) != 0) {
 		errno = error;
 		pkg_plugin_errno(self, "Failed to spawn process", arg);

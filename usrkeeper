@@ -1,11 +1,11 @@
 #!/bin/sh
 set -e
 
-if [ -z "$ETCKEEPER_CONF_DIR" ]; then
-	ETCKEEPER_CONF_DIR=/etc/usrkeeper
+if [ -z "$USRKEEPER_CONF_DIR" ]; then
+	USRKEEPER_CONF_DIR=/etc/usrkeeper
 fi
 
-conf="$ETCKEEPER_CONF_DIR/usrkeeper.conf"
+conf="$USRKEEPER_CONF_DIR/usrkeeper.conf"
 
 usage() {
 	echo "usage: usrkeeper command [-d directory]" >&2
@@ -89,25 +89,25 @@ if echo "$command" | LANG=C egrep -q '[^-a-z_]'; then
 	exit 1
 fi
 
-if [ ! -d "$ETCKEEPER_CONF_DIR/$command.d" ]; then
-	echo "usrkeeper: $ETCKEEPER_CONF_DIR/$command.d does not exist" >&2
+if [ ! -d "$USRKEEPER_CONF_DIR/$command.d" ]; then
+	echo "usrkeeper: $USRKEEPER_CONF_DIR/$command.d does not exist" >&2
 	exit 1
 fi
 
 if [ "x$1" = "x-d" ]; then
 	if [ -n "$2" ]; then
-		ETCKEEPER_DIR="$2"
+		USRKEEPER_DIR="$2"
 		shift 2
 	else
 		usage
 	fi
 fi
 
-if [ -z "$ETCKEEPER_DIR" ]; then
-	ETCKEEPER_DIR=/etc
+if [ -z "$USRKEEPER_DIR" ]; then
+	USRKEEPER_DIR=/etc
 fi
-cd "$ETCKEEPER_DIR"
-export ETCKEEPER_DIR
+cd "$USRKEEPER_DIR"
+export USRKEEPER_DIR
 
 if [ -d ".git" ]; then
 	VCS=git
@@ -134,6 +134,6 @@ lsscripts() {
 	' "$1"
 }
 
-for script in $(lsscripts "$ETCKEEPER_CONF_DIR/$command.d"); do
+for script in $(lsscripts "$USRKEEPER_CONF_DIR/$command.d"); do
 	"$script" "$@"
 done

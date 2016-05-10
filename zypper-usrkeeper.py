@@ -16,7 +16,7 @@ def _call_usrkeeper(install_arg):
     subprocess.call(['usrkeeper', install_arg], stdout=2)
 
 
-class EtckeeperPlugin(zypp_plugin.Plugin):
+class UsrkeeperPlugin(zypp_plugin.Plugin):
     def PLUGINBEGIN(self, headers, body):
         _call_usrkeeper('pre-install')
         self.ack()
@@ -35,5 +35,5 @@ class EtckeeperPlugin(zypp_plugin.Plugin):
 
 
 os.environ["LANG"] = "C"
-plugin = EtckeeperPlugin()
+plugin = UsrkeeperPlugin()
 plugin.main()

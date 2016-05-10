@@ -10,8 +10,8 @@ index 93f2b00..6c63ffb 100755
 --- a/usrkeeper
 +++ b/usrkeeper
 @@ -109,14 +109,16 @@ fi
- cd "$ETCKEEPER_DIR"
- export ETCKEEPER_DIR
+ cd "$USRKEEPER_DIR"
+ export USRKEEPER_DIR
  
 -if [ -d ".git" ]; then
 -       VCS=git
