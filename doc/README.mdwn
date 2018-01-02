@@ -11,6 +11,12 @@ permissions of `/etc/shadow`.
 It's quite modular and configurable, while also being simple to use if you
 understand the basics of working with version control.
 
+## DEPRECATED
+
+After I did the renames you see in this repository I found out about
+etckeeper's `-d` argument. Use something like [this script][] instead.
+
+ [this script]: https://github.com/strugee/steevie-usr-local/blob/master/bin/usrkeeper
 
 ## security warnings
 
